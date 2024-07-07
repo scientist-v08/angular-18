@@ -1,0 +1,24 @@
+@if (showTable) {
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Investment Value</th>
+        <th>Intrest (Year)</th>
+        <th>Total Intrest</th>
+        <th>Invested Capital</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (data of annualData; track data.year) {
+        <tr>
+          <td>{{ data.year }}</td>
+          <td>{{ data.valueEndOfYear | currency: "INR" }}</td>
+          <td>{{ data.interest | currency: "INR" }}</td>
+          <td>{{ data.totalInterest | currency: "INR" }}</td>
+          <td>{{ data.totalAmountInvested | currency: "INR" }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}

@@ -1,0 +1,15 @@
+<main>
+  <ul id="users">
+    @for (user of users(); track user.id) {
+      <li>
+        <div>
+          <button [class.active]="user.name === selectedUserName()" (mousedown)="onSelectedUser(user.name)">
+            <img [src]="'./../../assests/'+user.avatar" [alt]="user.id">
+            <span>{{ user.name }}</span>
+          </button>
+        </div>
+      </li>
+    }
+  </ul>
+  <app-task [selectedUserName]="selectedUserName()" [selectedUserTasks]="selectedTask()"></app-task>
+</main>
