@@ -1,0 +1,34 @@
+<div id="tickets">
+  <ul>
+    <li>
+      @for (ticket of tickets; track ticket.id) {
+        <article>
+          <h3>
+            <div
+              [class]="{
+                'ticket-open': ticket.status === 'ticket-open',
+                'ticket-closed': ticket.status !== 'ticket-open'
+              }"
+            ></div>
+            <button>
+              <span class="text">{{ticket.title}}</span>
+            </button>
+          </h3>
+
+          <p style="color: whitesmoke;">{{ticket.request}}</p>
+
+          @if (ticket.status === 'ticket-open') {
+            <p>
+              <button
+                style="background-color: #9162c6; padding: 2px;"
+                (mousedown)="markAsCompleted(ticket.id)"
+              >Mark as completed</button>
+            </p>
+          }
+        </article>
+      } @empty {
+        <p>No tickets available.</p>
+      }
+    </li>
+  </ul>
+</div>
