@@ -1,1 +1,14 @@
-Hello World!
+<app-header></app-header>
+
+<main>
+  <div id="dashboard">
+    <app-server-status [currentStatus]="currentStatus"></app-server-status>
+
+    <app-data-traffic
+      [dummyData]="dummyData"
+      [maxTraffic]="maxTraffic"
+    ></app-data-traffic>
+
+    <app-support-ticket> </app-support-ticket>
+  </div>
+</main>
