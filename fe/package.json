@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "nx": "nx",
     "chapter-01": "npx nx run chapter-01:serve:development --port 4201",
     "chapter-02": "npx nx run chapter-02:serve:development --port 4202",
-    "chapter-03": "npx nx run chapter-03:serve:development --port 4203"
+    "chapter-03": "npx nx run chapter-03:serve:development --port 4203",
+    "chapter-04": "npx nx run chapter-04:serve:development --port 4204",
+    "chapter-05": "npx nx run chapter-05:serve:development --port 4205"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +23,8 @@
     "@nx/angular": "19.3.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.3"
+    "zone.js": "~0.14.3",
+    "@ngrx/signals": "^17.2.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~18.0.0",
@@ -32,6 +36,7 @@
     "@angular/cli": "~18.0.0",
     "@angular/compiler-cli": "~18.0.0",
     "@angular/language-service": "~18.0.0",
+    "@ngrx/signals": "^17.2.0",
     "@nx/eslint": "19.3.1",
     "@nx/eslint-plugin": "19.3.1",
     "@nx/jest": "19.3.1",
