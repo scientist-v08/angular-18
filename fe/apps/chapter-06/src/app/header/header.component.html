@@ -1,0 +1,45 @@
+<header class="header header__mobile">
+  <section class="header__section section">
+    <h1 class="section__h1">TRAINING DAY 07</h1>
+    <button *ngIf="!clicked" class="section__button" (mousedown)="showMenu()">
+      ☰
+    </button>
+    <button *ngIf="clicked" class="section__button" (mousedown)="showMenu()">
+      ✕
+    </button>
+  </section>
+  <nav [ngClass]="classSelector()">
+    <ul class="header__ul">
+      <li class="header__li">
+        <a [routerLink]="'/'">Home</a>
+      </li>
+      <li class="header__li">
+        <a [routerLink]="'menu'">Menu</a>
+      </li>
+      <li class="header__li">
+        <a [routerLink]="'hours'">Hours</a>
+      </li>
+      <li class="header__li">
+        <a [routerLink]="'contact'">Contact</a>
+      </li>
+      <li class="header__li">
+        <a [routerLink]="'about'">About</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<header class="header header__desktop">
+  <section class="header__section section">
+    <h1 class="section__h1">TRAINING DAY 07</h1>
+    <div class="section__item-bar">
+      <h2 class="section__menu-item"><a [routerLink]="'/'">Home</a></h2>
+      <h2 class="section__menu-item"><a [routerLink]="'menu'">Menu</a></h2>
+      <h2 class="section__menu-item"><a [routerLink]="'hours'">Hours</a></h2>
+      <h2 class="section__menu-item">
+        <a [routerLink]="'contact'">Contact</a>
+      </h2>
+      <h2 class="section__menu-item"><a [routerLink]="'about'">About</a></h2>
+    </div>
+  </section>
+</header>
