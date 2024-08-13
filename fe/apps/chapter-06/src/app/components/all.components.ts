@@ -1,31 +1,31 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'training-home',
+  selector: 'app-home',
   template: 'Home is created',
 })
 export class HomeComponent {}
 
 @Component({
-  selector: 'training-menu',
+  selector: 'app-menu',
   template: 'Menu is created',
 })
 export class MenuComponent {}
 
 @Component({
-  selector: 'training-hours',
+  selector: 'app-hours',
   template: 'Hours is created',
 })
 export class HoursComponent {}
 
 @Component({
-  selector: 'training-contact',
+  selector: 'app-contact',
   template: 'Contact is created',
 })
 export class ContactComponent {}
 
 @Component({
-  selector: 'training-about',
+  selector: 'app-about',
   template: 'About is created',
 })
 export class AboutComponent {}
