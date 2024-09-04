@@ -9,7 +9,8 @@
     "chapter-03": "npx nx run chapter-03:serve:development --port 4203",
     "chapter-04": "npx nx run chapter-04:serve:development --port 4204",
     "chapter-05": "npx nx run chapter-05:serve:development --port 4205",
-    "chapter-06": "npx nx run chapter-06:serve:development --port 4206"
+    "chapter-06": "npx nx run chapter-06:serve:development --port 4206",
+    "chapter-07": "npx nx run chapter-07:serve:development --port 4207"
   },
   "private": true,
   "dependencies": {
